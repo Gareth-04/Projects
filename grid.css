@@ -1,0 +1,1283 @@
+@media screen and (max-width:768px) {  /*This media query has the designs for the mobile version of the website. This allows the website to be responsive and let's it work on multiple devices. */
+    .body {
+        width: 100%;
+    }
+
+
+    /*CSS for Logo*/
+    header {
+        display:grid;  
+        grid-template-columns: 15% 50% 40%;
+        height: 80px;
+    }
+ 
+
+    header>p.Robot {
+        grid-column-start: 2;
+        grid-column-end: 3;  /* W3 Schools,2023 CSS Grid Layout Method [online]. Available from:https://www.w3schools.com/css/css_grid.asp [Accessed 20th November 2023]*/
+        grid-row-start: 1;
+        grid-row-end: 1;
+    }
+
+
+    header>p.Juice {
+        margin-left: 80px;
+        grid-column-start: 2;
+        grid-column-end: 3;     
+        grid-row-start: 1;
+        grid-row-end: 1;
+    }
+
+
+    header>p.text {
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 1;
+        grid-row-end: 1;
+        margin-top: 65px;
+        margin-left: 60px;
+    }
+/*CSS for Logo Ends here*/
+
+
+/* This is the CSS for the Navbar */
+
+.navbar {
+    width: 100%;
+    margin-bottom: 0%;
+}
+
+
+.nav {
+    width: 70%;
+    max-width: 90%;
+    margin-left: 19%;
+    margin-bottom: 0%;
+    margin-top: 0%;
+}
+
+
+.navbar ul>li.item1 {                                     
+    padding-top:3%;
+    padding-bottom: 3%;   
+    padding-right: 1.5%;  
+    padding-left: 1.5%;                           
+    text-align: center;   
+    overflow: hidden;
+}
+
+
+.navbar ul li {
+    display: inline;
+    line-height:3%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    padding-right: 1%; 
+    padding-left: 1%;
+    margin-left: 0%;
+}
+
+
+.navbar ul {
+    padding-inline-start: 10%;
+    padding-inline-end: 10%;
+    margin-bottom: 0%;
+    margin-top: 0%;
+    overflow: hidden;
+}
+
+
+.navbar>ul li:not(:nth-child(6)) { /*This allows every element in the navbar except the last element to have a border-right*/
+    border-right: 1px solid lightgrey;  /* Stack Overflow,2015. Put a line in between links in html navigation bar[online]. Available from: https://stackoverflow.com/questions/29446595/put-a-line-between-links-in-html-navigation-bar [Accessed 23rd November 2023]*/
+}
+/* End of Navbar CSS*/
+
+
+    .banner { /*CSS for banner*/
+        width:80%;
+        margin-left: 10%;
+        margin-right: 10%;
+        height: auto;
+    }
+
+
+    .description { /*CSS for Description*/
+    width: 80%;
+    margin-left: 10%;
+    text-align: center;
+    }
+
+
+    hr {
+        width: 80%;
+    }
+
+
+    /*CSS for the four Images and text*/
+    .container1 {
+    display: block;  /*The main difference for this part of the code is that for mobile devices the images and text are displayed one after the other but for laptop/ desktop where the screen is bigger the images and text are displayed in a line each indivudal image taking up a quarter */
+    margin-left: 10%;
+    }
+
+    
+    .image-with-text>img {
+        width: 90%;       
+        margin-right: 10%;
+    }
+
+
+    .image-with-text>h2 {
+        width: 100%;
+    }
+
+
+    .image-with-text>p {
+        width: 80%;
+    }
+
+    
+    .oil {
+        text-align: left;
+        margin-right: 10%;
+    }
+    
+    
+    .dry {
+        text-align: left;
+         margin-right: 10%;
+    }
+    
+    
+    .wet {
+        text-align: left;
+        margin-right: 10%;
+    }
+    
+    
+    .Product {
+        text-align: left;
+        margin-right: 10%;
+    }
+
+
+    .hr2 {
+        width: 80%;
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+
+
+/*CSS for the four Images and text Ends here*/
+
+
+/*CSS needed for Form starts here*/
+div>.form {
+    float: left;
+    margin-left: 15%;
+    margin-right: 15%;
+    }
+
+
+    fieldset {
+        float: right;
+        display: block;
+        width:70%; /* This set width ensures that on mobile the fieldset takes up the majority of the space but for tablets the fieldset takes half the space allowing the latest news section to move into the available space to the left so that it mimicks the desktop design */
+        margin-bottom: 10%;
+    }
+
+      
+    .p1 {
+        width: 90%;
+        margin-left: 1rem;
+    }
+    
+    
+    input[type="radio"] {  /* Rob Gravelle, 2021. HTMLGoodies Styling Radio Buttons and Checkboxes in HTML Forms[online] Available from: https://www.htmlgoodies.com/css/style-radio-buttons-checkboxes-css/ [Accessed 22nd November 2023]*/
+        appearance: none;  /*removes original appearance of button allowing a custom appearance to be made */
+        border: 2px solid black;
+        border-radius: 50%;
+        width:15px;
+        height:15px;
+        margin-right: 2px;
+        margin-left: 50px;
+    }
+    
+    
+    .p2 {
+        width: 90%;
+        text-align: left;
+        margin-left: 1rem;
+    }
+    
+    
+    .question {
+        width: 90%;
+        margin-left: 1rem;
+    }
+
+
+    .a {
+        padding-inline-start: 1.5rem;
+        
+    }
+    
+
+    .answer {
+        width:90%;
+        margin-left: 1rem;
+    }
+    /*CSS needed for Form Ends here*/
+    
+
+    /*CSS for the Latest News */
+    .news {
+        margin-left: 10%;
+        display: block;
+        float: left;
+        margin-top: 0%;
+        width: 70%;
+    }
+    
+    
+    .date1 {
+        margin-top: 0%;
+        margin-left: 90%;
+        float: inline-end;
+    } 
+
+
+    .date2 {
+        margin-top: 0%;
+        margin-left: 90%;
+        float: right;
+    } 
+
+
+    .date3 {
+        margin-top: 0%;
+    } 
+    
+
+    .news>p {
+        margin-left: 3%;
+        width: 100%;
+    }
+
+
+    h3 {
+        width: 100%;
+    }
+    /*CSS for the Latest News Ends here*/
+   
+    
+/* This is the CSS for the Section */
+    section {
+        width: 100%; /*Ensures that the section takes up 100% of the given space of the device */
+        display: block;  /*The main difference for this part of the webpage is that instead of all elements in the section, magazine image latest reviews and links, being inline with each other using grids they are displayed one after the other */
+    }
+    
+    
+    .magazine {
+        margin-top: 50px;
+        margin-left: 10%;
+        width: 40%;
+        height: auto;
+    }
+    
+    
+    .reviews {
+        width: 100%;
+        margin-top: 50px;
+        margin-left: 10%;
+    }
+    
+    
+    .reviewtext {
+        float: left;
+        width: 80%;
+        margin-top: 0px;
+        margin-left: 10%;
+    }
+
+
+    .links {
+        margin-right: 40%;
+        margin-block-start: 0px;
+        margin-block-end:  0px;
+    }
+    
+
+    .Links {
+        margin-top: 5%;
+        width: 100%;
+    }
+
+
+    section ul li:nth-child(1) {
+        width: 40%;
+    }
+
+
+    section ul.Links {
+        padding-inline-start: 0px;
+        margin-left: 10%;
+    }
+
+
+    section>ul li a{
+        line-height: 30px;  /* Stack Overflow,2013. How do I set vertical space between list items?[online]. Available from: https://stackoverflow.com/questions/19254411/how-do-i-set-vertical-space-between-list-items [Accessed 14th November 2023]*/
+    }
+
+     
+    section>ul li a.Web {
+        line-height: 0px;
+    } /*End of CSS for the Section*/
+
+
+/*This point on is the CSS Needed for the Footer*/
+    footer {
+        width: 100%;
+        height:250px;
+    }
+
+
+    .footer1 {
+        float:left;
+        margin-left: 10%;
+        width: 80%;
+    }
+    
+    
+    .footer2 {
+        float:left;
+        margin-left: 10%;
+        width: 80%;
+    }
+    
+    
+    .footer3 {
+        float:left;
+        margin-left: 10%;
+        width: 80%;
+    }
+    
+    
+    .footer4 {
+        float:left;
+        margin-left: 10%;
+        width: 80%;
+    }
+} /*End of Mobile Design */
+
+
+@media screen  and  (min-width:769px) { /*This is the design for laptops/desktops. */
+    /*CSS for Logo*/
+    header {
+        height: 170px;
+    }
+
+
+    header {
+        display:grid;  
+        grid-template-columns:  8% 40%; /*W3 Schools,2023 CSS Grid Layout Method[online]. Available from: https://www.w3schools.com/css/css_grid.asp [Accessed 20th November 2023]*/
+    }
+    
+    
+    header>p.Robot {
+        grid-column-start: 2;
+        grid-column-end: 3;  /* W3 Schools,2023 CSS Grid Layout Method[online]. Available from:https://www.w3schools.com/css/css_grid.asp [Accessed 20th November 2023]*/
+        grid-row-start: 1;
+        grid-row-end: 1;
+        margin-left: 125px;
+    }
+    
+    
+    .Juice {
+        grid-column-start: 2;
+        grid-column-end: 3;     /*These grids allow for the logo to be made. The grid allows the elements to be put close together and CSS Grids allow for the writing to be placed directly underneath Juice */
+        grid-row-start: 1;
+        grid-row-end: 1;
+        margin-left: 275px;
+    }
+    
+    
+    .text {
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 1;
+        grid-row-end: 1;
+        margin-left: 2%;
+        margin-top: 130px;
+        margin-left: 285px;
+    }
+    /*CSS for Logo Ends here*/
+
+
+    /* This is the CSS for the Navbar */
+    .nav {
+        margin-top: 0px;
+        margin-bottom: 0px;     /*sets the location of the hr element*/
+        margin-left: 26%;
+        border:1px solid lightgrey;  /*Stack Overflow,2014. How to change color of <hr/> element?[online] Available from: https://stackoverflow.com/questions/22382338/how-to-change-color-of-hr-element [Accessed 23rd November 2023]*/
+        width: 59%;
+        max-width: 100%;
+    }
+    
+
+    .navbar ul {
+        display: flex;
+        justify-content: space-evenly; /*allows all list elements in the navbar to be spaced evenly even when stretched or shrunk */
+        width: 80%;
+        margin-inline-start: 1rem;
+        margin-inline-end: 1rem;
+        margin-bottom: 0%;
+        margin-top: 0%;
+    }
+    
+
+    .navbar ul li {
+        display: block;
+        width: 100%;
+        padding-bottom: 1.5rem;
+        padding-top: 1.5rem;  /* W3 Schools,2023. CSS Padding[online]. Available from:https://www.w3schools.com/css/css_padding.asp [Accessed 22nd November 2023]*/
+    }
+
+
+    .navbar>ul li:not(:nth-child(6)) { /*This allows every element in the navbar except the last element to have a border-right*/
+        border-right: 1px solid lightgrey;  /* Stack Overflow,2015. Put a line in between links in html navigation bar[online]. Available from: https://stackoverflow.com/questions/29446595/put-a-line-between-links-in-html-navigation-bar [Accessed 23rd November 2023]*/
+    }
+    
+    
+    .navbar ul>li.item1 {                                                                   
+        text-align: center;   
+        margin-left: 14.95%;
+        overflow: hidden;
+    }
+
+   
+    /*End of CSS for Navbar*/
+    
+
+    .banner { /*CSS for banner*/
+        display: block; 
+        margin-left: auto;               /* W3 Schools,2023. How TO-Center Images[online] Available from: https://www.w3schools.com/howto/howto_css_image_center.asp [Accessed 5th November 2023] */
+        margin-right: auto;
+        width: 70%;                      /*70% of the width of the screen Using auto for both margins allows the image to be aligned perfectly central.*/
+        max-width: 100%; /* Allows for the image to be stretched to fit any screen */
+    } /*end of CSS for banner */
+
+
+    .description { /*CSS for description*/
+        width: 60%;
+        max-width: 90%;
+    } /*end of CSS for description */
+
+
+/*CSS for the four Images and text*/
+    .container1 {
+        display:flex;  
+        margin-left: 13%;
+        width: 80%;
+        max-width: 100%;
+    }
+    
+    
+    .image-with-text>img {
+        width:100%;  /*Width=100% ensures that the photo can stretch to fill the intended space.*/
+    }
+    
+    
+    .image-with-text {                 /*Stack Overflow,2013 4 Images in a row, how do I center specific text under each image?[online] Available from: https://stackoverflow.com/questions/15525123/4-images-in-a-row-how-do-i-center-specific-text-under-each-image [Accessed 11th November 2023]*/
+        padding-left: 2.5%;              /* Codedamn,2022. How to put Image and text side-by-side in HTML?[online]. Available from: https://codedamn.com/news/frontend/how-to-put-image-and-text-side-by-side-in-html [Accessed 11th November 2023]*/
+        float: left;                    /*W3 Schools,2023 How TO- Align Images side by side[online]. Available from: https://www.w3schools.com/howto/howto_css_images_side_by_side.asp [Accessed 11th November 2023] */
+        width:20%;
+        max-width: 40%;
+        overflow: hidden;
+    }
+    
+    
+    .image-with-text>p {
+        margin-left: 5px;
+    }
+    /*CSS for the four Images and text Ends here*/
+
+
+    /*CSS needed for Form starts here*/
+    fieldset {
+        width: 40%;
+        max-width: 100%;
+        margin-bottom:100px;
+    }
+
+
+    .form {
+        float: right;  /* aligns the form to the right to allow Latest News text to be placed to the left */
+        margin-right: 15%;
+    }
+    
+    
+    fieldset>h2 {
+        margin-left: 5%;
+    }
+    
+    
+    input[type="radio"] {
+        display: inline-grid;
+        margin-left: 15%;
+    }
+    
+    
+    ol>.a {
+        margin-left: 5%;
+    }
+    /*CSS needed for Form ends here*/
+
+    
+    .news { /*CSS for latest news */
+        display:block;
+        float: left;
+        margin-left: 15%;               /* allows the latest news paragraphs to be put next to the form */
+        width: 38%;
+        max-width: 100%;                     /* Stack Overflow,2019. How to put one paragraph below other with float right?[online]. https://stackoverflow.com/questions/57657285/how-to-put-one-paragraph-below-other-with-float-right [Accessed 13th November 2023]*/
+        text-align: left;                    
+        }
+
+
+        .date1 {
+            margin-top: 0%;
+        } 
+
+
+        .date2 {
+            margin-top: 0%;
+        } 
+
+
+        .date3 {
+            margin-top: 0%;
+        } 
+
+
+    .news>p {
+        margin-left: 5px;
+        margin-bottom: 0px;
+    }/*CSS for latest news ends */
+    
+    
+    section { /*CSS for section begins */
+        width:100%;
+        display: grid;
+        grid-template-columns: 15% 10% 10% 10% 10% 10% 10% 10% 15%;  /*This sets the number of columns and rows in the grid. This column layout has been used to allow 3 elements to be placed toghether in a row */
+        grid-template-rows: 10%;
+    }
+    
+    
+    .magazine {
+        grid-column-start: 2;
+        grid-column-end: 2;
+        margin-top: 50px;
+    }
+    
+    
+    .reviews {
+        width: 500px;
+        grid-column-start: 3;
+        grid-column-end: 7;
+        margin-top: 50px;
+        margin-left: 25%;
+    }
+    
+    
+    .reviewtext {
+        float: left;
+        grid-column-start: 4;
+        grid-column-end: 7;
+        width: 50%;
+        margin-top: 50px;
+    }
+    
+    
+    .Links {
+        grid-column-start: 7;
+        grid-column-end: 7;
+        grid-row-start: 1;
+        grid-row-end: 1;
+        margin-top: 90px;
+        width: 200px;
+    }
+    
+    
+    .links { 
+        grid-column-start: 7;
+        grid-column-end: 7;
+        grid-row-start: 1;
+        grid-row-end: 1;
+        margin-top: 50px;
+        width: 20%;
+        margin-left: 40px;
+    }
+    
+    
+    section>ul li a{
+        line-height: 40px;  /* Stack Overflow,2013. How do I set vertical space between list items?[online]. Available from: https://stackoverflow.com/questions/19254411/how-do-i-set-vertical-space-between-list-items [Accessed 14th November 2023]*/
+    }
+    
+    
+    section>ul li a.Web {
+        line-height: 0px;
+    } /*CSS for section ends */
+    
+
+    /*This point on is the CSS Needed for the Footer*/
+    footer {
+        width: 100%;
+    }
+
+    
+    .footer1 {
+        float:left;
+        margin-left: 15%;
+        width: 40%;
+    }
+    
+    
+    .footer2 {
+        float:right;
+        width: 37%;
+    }
+    
+    
+    .footer3 {
+        float:left;
+        margin-left: 15%;
+        width: 37%;
+    }
+    
+    
+    .footer4 {
+        float:right;
+        width: 37%;
+    }
+} /*End of Laptop/Desktop Website */
+
+
+/*Product Page Only Styles*/
+
+@media screen and (max-width:768px) {
+    /* This is the CSS for the Navbar */
+
+
+    .navbar2 {
+        width: 100%;
+        margin-bottom: 0%;
+    }
+ 
+
+    .nav2 {
+        width: 70%;
+        max-width: 90%;
+        margin-left: 19%;
+        margin-bottom: 0%;
+        margin-top: 0%;
+    }
+
+
+    .navbar2 ul>li.item1 {                                     
+        padding-top:3%;
+        padding-bottom: 3%;   
+        padding-right: 2%;  
+        padding-left: 2%;                           
+        text-align: center;   
+        overflow: hidden;
+    }
+
+
+    .navbar2 ul li {
+        display: inline;
+        line-height:3%;
+        padding-top: 1%;
+        padding-bottom: 1%;
+        padding-right: 3%; 
+        padding-left: 3%;
+        margin-left: 0%;
+    }
+
+
+    .navbar2 ul {
+        padding-inline-start: 10%;
+        margin-right: 10%;
+        margin-bottom: 0%;
+        margin-top: 0%;
+        overflow: hidden;
+    }
+
+
+    .navbar2>ul li:not(:nth-child(6)) { /*This allows every element in the navbar except the last element to have a border-right*/
+        border-right: 1px solid lightgrey;  /* Stack Overflow,2015. Put a line in between links in html navigation bar[online]. Available from: https://stackoverflow.com/questions/29446595/put-a-line-between-links-in-html-navigation-bar [Accessed 23rd November 2023]*/
+    } /*End of CSS for Navbar */
+
+
+/* CSS for the Purchasing of products*/
+    .Buy { 
+        display: block;
+        margin-top: 5%;
+    }
+    
+    
+    .image1 {
+        border: solid 1px red;
+        width: 20%;
+        margin-bottom: 10px;
+        margin-left: 10%;
+        margin-right: 1%;
+    }
+    
+    
+    .image2 {
+        border: solid 1px red;
+        margin-bottom: 10px;
+        width: 20%;
+        margin-right: 1%;
+    }
+    
+    
+    .image3 {
+        border: solid 1px red;
+        margin-bottom: 10px;
+        width: 20%;
+        margin-right: 10%;
+    }
+    
+    
+    .image4 {
+        border: 5px solid white;
+        margin-left: 10%;
+        width: 76%;
+    }
+
+
+    .BikeOil {
+        margin-left: 10%;
+    }
+    
+    
+    .money {
+        margin-left: 10%;
+    }
+    
+
+    #Size {
+        margin-left: 10%;
+        width: 40%;
+    }
+    
+    
+    #Quantity {
+        margin-left: 1%;
+        width: 40%;
+    }
+    
+    
+    .Shop {
+        margin-left: 10%;
+        width: 80%;
+    }
+    
+    
+    #BuyNow {
+        margin-left: 30%;
+        width: 50%;
+        margin-top: 2%;
+    }
+    
+    
+    .Stocklist {
+        margin-left: 10%;
+    }
+
+
+    .Share {
+        margin-left: 10%;
+    }
+
+    
+    
+    .Facebook {
+        margin-left: 11%;
+    } 
+    /*End of CSS for Purchasing items */
+    
+
+    /* CSS for Similiar Products */
+    .simprod1 {
+        margin-left: 10%;
+        width: 35%;
+    }
+
+
+    .simprod {
+        display: inline;
+        margin-left: 10%;
+        width: 35%;
+    }
+
+
+    .Similiar {
+        margin-left: 10%;
+    } /*End of CSS for Similiar Products*/
+
+
+    /* CSS for Product Reviews*/
+     .Product {
+        margin-left: 10%;
+    }
+
+
+    #ProductReviews {
+        display: inline;
+    }
+
+
+    #full_review {
+        width:90%;
+        margin-left: 10%;
+    }
+
+
+    .nickname_placement {
+        margin-top: 10px;
+        width: 40%;
+        margin-left: 0%;
+    }
+
+    .star_placement {
+        margin-left: 0%;
+        width: 40%;
+    }
+
+
+    .review_placement {
+        margin-bottom: 1%;
+        width: 80%;
+    }
+
+
+    hr.border {
+        width: 90%;
+        margin-left: 0%;
+        margin-right: 0%;
+    }
+
+
+    .icon1 {
+    border-radius: 25%;  /*Becky Aiken, 2014. Rounded Corners on Image [Online] Available from: https://ianrmedia.unl.edu/resources/rounded-corners-images#:~:text=The%20border%2Dradius%20CSS%20property%20is%20what%20adds%20the%20rounded%20corners.&text=You%20can%20experiment%20with%20different,it%20the%20way%20you%20like.&text=border%2Dradius%3A%2075px%3B,%2Dradius%3A%2050%25%3B%20. [Accessed 7th Decembber 2023] */
+    }
+
+    
+    #Readall {
+        width:50%;
+        margin-left: 20%;
+        height: 100%;
+        margin-top: 4%;
+        margin-bottom: 0%;
+        border-radius: 4px;
+    } 
+    
+
+    #hide_reviews {
+        width:50%;
+        margin-left: 20%;
+        height: 100%;
+        margin-top: 4%;
+        margin-bottom: 10%;
+        border-radius: 4px;
+    } 
+    /*End of CSS for Product Reviews */
+
+
+    /* This is the CSS for the Section */
+    section {
+        width: 100%; /*Ensures that the section takes up 100% of the given space of the device */
+        display: block;  /*The main difference for this part of the webpage is that instead of all elements in the section, magazine image latest reviews and links, being inline with each other using grids they are displayed one after the other */
+    }
+    
+    
+    .magazine {
+        margin-top: 50px;
+        margin-left: 10%;
+        width: 40%;
+        height: auto;
+    }
+    
+    
+    .reviews {
+        width: 100%;
+        margin-top: 50px;
+        margin-left: 10%;
+    }
+    
+    
+    .reviewtext {
+        float: left;
+        width: 80%;
+        margin-top: 0px;
+        margin-left: 10%;
+    }
+    
+
+    .Links {
+        margin-top: 5%;
+        width: 100%;
+    }
+    
+    
+    section> p {
+        width: 50%;
+        float: right;
+        margin-right: 37%;
+    }
+
+
+    section>ul li a{
+        line-height: 30px;  /* Stack Overflow,2013. How do I set vertical space between list items?[online]. Available from: https://stackoverflow.com/questions/19254411/how-do-i-set-vertical-space-between-list-items [Accessed 14th November 2023]*/
+    }
+
+     
+    section>ul li a.Web {
+        line-height: 0px;
+    } /*End of CSS for section */
+} /*End of CSS for Mobile Design */
+
+
+@media screen and (min-width:769px) { 
+  /* CSS for Navbar */
+  .nav2 {
+    margin-top: 0px;
+    margin-bottom: 0px;     /*sets the location of the hr element*/
+    margin-left: 25.45%;
+    border:1px solid lightgrey;  /*Stack Overflow,2014. How to change color of <hr/> element?[online] Available from: https://stackoverflow.com/questions/22382338/how-to-change-color-of-hr-element [Accessed 23rd November 2023]*/
+    width: 61%;
+    max-width: 100%;
+}
+
+
+.navbar2 ul {
+    display: flex;
+    justify-content: space-evenly; /*allows all list elements in the navbar to be spaced evenly even when stretched or shrunk */
+    width: 80%;
+    margin-inline-start: 1rem;
+    margin-inline-end: 1rem;
+    margin-bottom: 0%;
+    margin-top: 0%;
+}
+
+
+.navbar2 ul li {
+    display: block;
+    width: 100%;
+    padding-bottom: 1.5rem;
+    padding-top: 1.5rem;  /* W3 Schools,2023. CSS Padding[online]. Available from:https://www.w3schools.com/css/css_padding.asp [Accessed 22nd November 2023]*/
+}
+
+
+.navbar2>ul li:not(:nth-child(6)) { /*This allows every element in the navbar except the last element to have a border-right*/
+    border-right: 1px solid lightgrey;  /* Stack Overflow,2015. Put a line in between links in html navigation bar[online]. Available from: https://stackoverflow.com/questions/29446595/put-a-line-between-links-in-html-navigation-bar [Accessed 23rd November 2023]*/
+}
+
+
+.navbar2 ul>li.item1 {                                                                   
+    text-align: center;   
+    margin-left: 14%;
+    overflow: hidden;
+}
+
+/*End of CSS for Navbar */
+
+
+/* CSS for purchasing of goods */
+.Buy{
+    display: grid;
+    grid-template-columns: 15% 6% 25% ;
+    grid-template-rows: 20% 20% 20% 20%;
+    row-gap: 10%;
+    column-gap:1.5%;
+    overflow: hidden;
+}
+
+
+.image1 {
+    border: solid 1px red;
+    grid-column-start: 2;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 1;
+    overflow: hidden;
+}
+
+
+.image2 {
+    border: solid 1px red;
+    grid-column-start: 2;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 1;
+    margin-top: 75%;
+    margin-right: 15%;
+}
+
+
+.image3 {
+    border: solid 1px red;
+    grid-column-start: 2;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 2;
+    margin-top: 10%;
+    margin-bottom: 10px;
+}
+
+
+.image4 {
+    grid-column-start: 3;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    grid-row-end: 5;
+    border: 5px solid white;
+    grid-row-start: 1;
+    grid-row-end: 5;
+    width: 50%;
+}
+
+
+body>h2 {
+    margin-left: 15%;
+}
+
+
+.BikeOil {
+    grid-column-start: 4;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 1;
+    margin-left: 30%;
+    margin-top: 0%;
+}
+
+
+.money {
+    grid-column-start: 4;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 1;
+    margin-left: 30%;
+    margin-top: 5%;
+}
+
+
+#Size {
+    grid-column-start: 4;
+    grid-column-end: 4;
+    width: 20%;
+    height: 25%;
+    grid-row-start: 1;
+    grid-row-end: 1;
+    margin-left: 30%;
+    margin-top:11%;
+    border-radius: 5%;
+}
+
+
+#Quantity {
+    grid-column-start: 4;
+    grid-column-end: 4;
+    width: 20%;
+    height: 25%;
+    grid-row-start: 1;
+    grid-row-end: 1;
+    margin-left: 52%;
+    margin-top: 11%;
+    border-radius: 5%; /*adds a small curve to the corners of the boxes */
+}
+
+
+#BuyNow {
+    float: right;
+    grid-column-start: 4;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 1;
+    margin-left: 30%;
+    width: 42%;
+    height: 35%;
+    margin-top: 19%;
+}
+
+
+.Stocklist {
+    grid-column-start: 4;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 2;
+    margin-left: 40%;
+    width: 40%;
+    margin-top: 12%;
+}
+
+
+.Share {
+    grid-column-start: 4;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 2;
+    margin-top: 16%;
+    width: 10%;
+    margin-left: 56%;
+}
+
+
+.Facebook {
+    grid-column-start: 4;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 2;
+    margin-top: 16.5%;
+    margin-left: 65%;
+}
+
+
+.Twitter {
+    grid-column-start: 4;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 2;
+    margin-top: 16.5%;
+    margin-left: 67%;
+}
+
+
+.email {
+    grid-column-start: 4;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 2;
+    margin-top: 16.5%;
+    margin-left: 69%;
+}
+
+
+.Shop {
+    float: right;
+    grid-column-start: 4;
+    grid-column-end: 4;
+    width: 42%;
+    grid-row-start: 2;
+    grid-row-end: 2;
+    margin-left: 30%;
+    margin-top: 23%;
+}
+/* End of CSS for the purchasing of goods*/
+
+
+
+/*CSS for Similiar Products */
+.simprod1 {
+margin-left: 15%;
+width: 10%;
+}
+
+
+.simprod {
+padding-left: 1.5%;
+width: 10%;
+max-width: 60%;
+}
+
+/*End of CSS for Similiar Product */
+
+/* CSS for Product Reviews */
+#ProductReviews {
+    display: inline;
+}
+
+
+#full_review {
+    width:80%;
+    margin-left: 15%;
+    display: grid;
+    grid-template-rows: 20% 20% 20% 20% 20%;
+    grid-template-columns: 10% 10% 20% 50%;
+}
+
+
+.nickname_placement {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 1;
+    margin-top: 50px;
+    margin-left: 15%;
+}
+
+
+.star_placement {
+    margin-left: 0%;
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 1;
+    margin-left: 5%;
+}
+
+
+.review_placement {
+    grid-column-start: 4;
+    grid-column-end: 5;
+    width: 80%;
+    grid-row-start: 1;
+    grid-row-end: 1;
+}
+
+
+hr.border {
+    width: 87%;
+    margin-left: 0%;
+    margin-right: 0%;
+    grid-column-start: 1;
+    grid-column-end: 7;
+    grid-row-start: 5;
+    grid-row-end: 5;
+    height: 0%;
+    margin-top: 1%;
+}
+
+
+.icon1 {
+    grid-column-start: 1;
+    grid-column-end: 1;
+    border-radius: 25%;  /*Becky Aiken, 2014. Rounded Corners on Image [Online] Available from: https://ianrmedia.unl.edu/resources/rounded-corners-images#:~:text=The%20border%2Dradius%20CSS%20property%20is%20what%20adds%20the%20rounded%20corners.&text=You%20can%20experiment%20with%20different,it%20the%20way%20you%20like.&text=border%2Dradius%3A%2075px%3B,%2Dradius%3A%2050%25%3B%20. [Accessed 7th December 2023] */ 
+    margin-bottom: 20%;
+}
+
+
+#Readall {
+    width:15%;
+    margin-left: 40%;
+    height: 50px;
+    margin-top: 2%;
+    margin-bottom: 0%;
+    border-radius: 5%;
+} 
+
+
+#hide_reviews {
+    width:15%;
+    margin-left: 40%;
+    height: 50px;
+    margin-top: 0%;
+    margin-bottom: 1%;
+    border-radius: 5%;
+} 
+
+/*End of CSS for Product Reviews */
+}
+/*End of desktop design*/
