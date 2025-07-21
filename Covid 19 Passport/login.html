@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <style>
+         h1 {
+            color: black;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: black;
+            font-family: Arial;
+            font-weight: bold;
+        }
+
+        .container {
+            background: #72ff59;
+            padding: 94px;
+            border-radius: 5px;
+            width: 300px;
+            text-align: center;
+        }
+
+        input {
+            width: 100%;
+            padding: 8px;
+            margin: 8px 0;
+            border: 1px solid #aaa;
+            border-radius: 3px;
+        }
+
+        #loginbtn {
+            background-color: #007bff;
+            color: white;
+            padding: 8px 110px; 
+            border-radius: 3px;
+            
+            background-color: #007bff;
+            padding: 8px 110px;
+            text-decoration: none;
+            border-radius: 3px;
+        }
+        
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Login</h1>
+        
+        <form id="login_form">
+            <input id="email" type="email" placeholder="Email" required>
+            <input id="password" type="password" placeholder="Password" required>
+            <br><br>
+            <a id="loginbtn" onclick="login(event)">Login</a>
+             
+        <br><br>
+
+    </div>
+        </form>
+    </div>
+
+        
+
+    <script>
+    let users = [];
+
+    // Handle Login
+    function login(event) {
+        event.preventDefault(); // MDN WEB DOCS (2025) Event:preventDefault() method [online]. Available from:https://developer.mozilla.org/en-US/docs/Web/API/Event/preventDefault [Accessed 26 Febuary 2025].
+
+        const email = document.getElementById('email').value;
+        const password = document.getElementById('password').value;
+
+        // Check if the credentials match any user in the array
+        const user = users.find(u => u.email === email && u.password === password);
+
+        if (user) {
+            window.location.href = "Covid19_Passport.html";
+        } else {
+            alert("Invalid credentials, please try again.");
+            document.getElementById('login_form').reset() // W3 SCHOOLS, 2025. Form reset() Method [online]. Available from: https://www.w3schools.com/Jsref/met_form_reset.asp [Accessed 26 February 2025]. 
+        }
+    }
+
+    // gathers the CSV data by splitting the document into rows and columns. Then defining where data is held. 
+    function parseCSV(csvData) {
+        const rows = csvData.split("\n");
+        
+        // skip the first row This row in CSV file tends to be a defintion of what each value is. E.G email, password
+        rows.slice(1).forEach(row => {
+            const columns = row.split(","); // splits the values per comma
+            const email = columns[0].trim(); //MDN WEB DOCS (2024) String.prototype.trim() [online]. Availale from: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/trim [Accessed 26 February 2025].
+            const password = columns[1].trim(); // .trim removes whites from the string
+
+            if (email && password) { // if there is both an email and password.
+                users.push({ email, password });
+            }
+        });
+    }
+
+    window.onload = function() {
+        fetch('login.csv') // MDN WEB DOCS (2025) Using the Fetch API [online]. Available from: https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch [Accessed 26 February 2025].
+            .then(response => response.text())  // Read the CSV data as text
+            .then(csvData => {
+                parseCSV(csvData); 
+                alert('CSV file loaded and users parsed');
+            })
+            .catch(error => console.error('Error loading the CSV file:', error)); // MDN WEB DOCS, 2025. try...catch [online]. Available from: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/try...catch [Accessed 26 February 2025],
+    };
+</script>
+
+</body>
+</html>
+

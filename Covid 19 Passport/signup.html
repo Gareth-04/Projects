@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up Page</title> <!-- Header of sign up page-->
+    <style>
+        body {  /* Body of log in page */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: black;
+            font-family: Arial;
+            font-weight: bold;
+        }
+        .signup-container {  /* Container for sign up form */ 
+            background: #72ff59;
+            padding: 94px;
+            border-radius: 5px;
+            width: 300px;
+            text-align: center;
+        }
+        input {  /* sign up Form */
+            width: 100%;
+            padding: 8px;
+            margin: 8px 0;
+            border: 1px solid #aaa;
+            border-radius: 3px;
+        }
+        #signupbtn { /* Button design */
+            background-color: #007bff;
+            color: white;
+            padding: 8px 110px; 
+            border-radius: 3px;
+            
+            background-color: #007bff;
+            padding: 8px 110px;
+            text-decoration: none;
+            border-radius: 3px;
+       }
+       
+    </style>
+</head>
+
+<body>
+    <div class="signup-container">
+
+        <h2>Sign Up</h2> <!-- Heading for sign up form-->
+
+        <form id="signupForm"> <!--Input elements-->
+            <input id="name" type="text" placeholder="Full Name" required >
+            <input id="email" type="email" placeholder="Email" required >
+            <input id="password" type="password" placeholder="Password" required>
+
+            <br> <!--break-->
+            <br>
+
+            <a id="signupbtn" href=""> <!--Sign up button-->
+                Sign up 
+            </a>
+        </form>
+
+        <br>
+
+        <a href="login.html" class="login-link">Already have an account? Login</a> <!--Link to log in page-->
+
+    </div>
+ </body>
+    <script>
+        window.onload = function() {
+        fetch('login.csv') }
+
+        document.getElementById('signupForm').addEventListener('submit', function(event) {
+            event.preventDefault(); // Prevent page reload on form submission
+            
+            // Get form data
+            const email = document.getElementById('email').value;
+            const password = document.getElementById('password').value;
+            
+            const formData = {
+                email: email,
+                password: password,
+            };
+            
+            // Send the email and password from the form to the login.csv file
+            fetch('login.csv', { // MDN WEB DOCS, 2025. Using the Fetch API [online]. Available from: https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch [Accessed 11 March 2025].
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+            })
+            .then(response => response.json())
+            .then(data => {
+                console.log('Success:', data);
+                alert('Signup successful!');
+                document.getElementById('signupForm').reset(); // W3 SCHOOLS, 2025. Form reset() Method [online]. Available from: https://www.w3schools.com/Jsref/met_form_reset.asp [Accessed 26 February 2025].
+                 
+            })
+            .catch((error) => {
+                console.error('Error:', error);
+                alert('There was an error with the signup.');
+            });
+        });
+    </script>
+
+</html>
+
